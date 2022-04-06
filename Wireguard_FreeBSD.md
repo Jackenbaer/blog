@@ -1,8 +1,3 @@
----
-layout: post
-title: Blogging Like a Hacker
----
-
 # Wireguard VPN server on FreeBSD 13.0
 
 ## Overview
