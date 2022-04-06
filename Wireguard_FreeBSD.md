@@ -1,3 +1,8 @@
+layout: page
+title: "Wireguard VPN Server on FreeBSD 13.0"
+permalink: /wireguard-freebsd
+
+
 # Wireguard VPN server on FreeBSD 13.0
 
 ## Overview
