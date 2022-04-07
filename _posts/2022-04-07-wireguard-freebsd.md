@@ -8,10 +8,10 @@ categories: jekyll update
 
 ## Overview
 - [Description](#description)
-- [Install wireguard] (#install_wireguard)
-- [Generate Keys] (#generate_keys)
-- [Edit pf] (#edit_pf)
-- [Debugging] (#debugging)
+- [Install wireguard](#install_wireguard)
+- [Generate Keys](#generate_keys)
+- [Edit pf](#edit_pf)
+- [Debugging](#debugging)
 
 
 
