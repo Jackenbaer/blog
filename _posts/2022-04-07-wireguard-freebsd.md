@@ -8,15 +8,9 @@ categories: jekyll update
 # Wireguard VPN server on FreeBSD 13.0
 
 ## Overview
-- [Description] (#description)
-- [Install wireguard] (#install_wireguard)
-- [Generate Keys] (#generate_keys)
-- [Edit pf] (#edit_pf)
-- [Debugging] (#debugging)
 
 
 
-<a name="description"></a>
 ### Description 
 This tutorial shows you, how to setup a wireguard VPN server using pf on FreeBSD.
 
@@ -28,7 +22,6 @@ FreeBSD 13.0-RELEASE-p3
 
 
 
-<a name="install_wireguard"></a>
 ### Install wireguard
 ```
 ‌pkg install -y wireguard
@@ -43,7 +36,6 @@ service wireguard start
 
 
 
-<a name="generate_keys"></a>
 ### Generate keys
 The following steps are based on the [official documentation](https://www.wireguard.com/quickstart/).
 
@@ -112,7 +104,6 @@ Endpoint = SERVER_IP:SERVER_PORT
 
 
 
-<a name="edit_pf"></a>
 ### Edit pf
 Before we start editing our pf.conf here are some basic advices for working with pf, because you easily get locked out by making a mistake.
 
@@ -156,7 +147,6 @@ pass in on $ext_if proto udp to port $udp_services
 ```
 
 
-<a name="debugging"></a>
 
 ### Debugging 
 Okay, following an internet step by step tutorial ends up not working in almost any case. 
