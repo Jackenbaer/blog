@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wireguard VPN server on FreeBSD 13.0"
-date:   2022-04-07 16:16:22 +0200
+date:   2022-04-07 16:16:23 +0200
 categories: jekyll update
 ---
 
