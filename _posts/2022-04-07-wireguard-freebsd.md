@@ -5,10 +5,9 @@ date:   2022-04-07 16:16:23 +0200
 categories: jekyll update
 ---
 
-# Wireguard VPN server on FreeBSD 13.0
 
 ## Overview
-- [Description] (#description)
+- [Description](#description)
 - [Install wireguard] (#install_wireguard)
 - [Generate Keys] (#generate_keys)
 - [Edit pf] (#edit_pf)
