@@ -16,19 +16,21 @@ categories: freebsd wireguard
 
 
 <a name="description"></a>
-### Description 
+## Description 
 This tutorial shows you, how to setup a wireguard VPN server using pf on FreeBSD.
 
-Tested with: 
-```
-wireguard-2,1
-FreeBSD 13.0-RELEASE-p3
-```
+
+## Setup
+
+| Software   | Version          |
+|:-----------|:-----------------|
+| FreeBSD    | 13.0-RELEASE-p3  |
+| wireguard  | 2.1              |
 
 
 
 <a name="install_wireguard"></a>
-### Install wireguard
+## Installation
 ```
 ‌pkg install -y wireguard
 sysrc wireguard_enable=YES
@@ -112,7 +114,7 @@ Endpoint = SERVER_IP:SERVER_PORT
 
 
 <a name="edit_pf"></a>
-### Edit pf
+## Edit pf
 Before we start editing our pf.conf here are some basic advices for working with pf, because you easily get locked out by making a mistake.
 
 Check your rules with the -n flag before loading them.
@@ -157,34 +159,34 @@ pass in on $ext_if proto udp to port $udp_services
 
 <a name="debugging"></a>
 
-### Debugging 
+## Debugging 
 Okay, following an internet step by step tutorial ends up not working in almost any case. 
 Here are some ideas, that might help you to fix your problem. 
 
 
-#### Wireguard is running ?
+### Wireguard is running ?
 ```
 service wireguard status
 ```
 
 
-#### Wireguard port isn't blocked by your firewall ?
+### Wireguard port isn't blocked by your firewall ?
 ```
 pfctl -sr
 ```
 
-#### Correct wireguard port is open?
+### Correct wireguard port is open?
 ```
 sockstat -l 
 ```
 
-#### Firewall rules are loaded?
+### Firewall rules are loaded?
 ```
 pfctl -sr
 ```
 
 
-#### Natting is working as it should?
+### Natting is working as it should?
 
 ```
 tcpdump -ni wg0
@@ -195,11 +197,11 @@ tcpdump -ni vtnet0 port 51820
 ```
 
 
-#### All keys are correct?
+### All keys are correct?
 Check them!
 
-#### Checked client log?
+### Checked client log?
 Take a look!
 
-#### Checked server log?
+### Checked server log?
 Take a look!
