@@ -14,7 +14,6 @@ Change DLT and add ethernet header to each packet.
 
 
 ## Setup 
-used setup
 
 | Software   | Version          |
 |:-----------|:-----------------|
