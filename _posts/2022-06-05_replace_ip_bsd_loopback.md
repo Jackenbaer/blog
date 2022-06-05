@@ -33,7 +33,7 @@ pkg install -y tcpreplay
 
 ## Adding Ethernet EN10MB headers
 
-image](/blog/assets/images/replace_ip_bsd_loopback_original.jpg)
+![image](/blog/assets/images/replace_ip_bsd_loopback_original.jpg)
 
 
 Insert bytes:
@@ -46,7 +46,7 @@ Change dtl:
 tcprewrite --dlt=enet --infile=tmp.pcap --outfile=enet.pcap
 ```
 
-image](/blog/assets/images/replace_ip_bsd_loopback_enet.jpg)
+![image](/blog/assets/images/replace_ip_bsd_loopback_enet.jpg)
 
 
 
