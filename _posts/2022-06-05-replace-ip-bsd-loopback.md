@@ -13,7 +13,7 @@ BSD loopback header is not supported by tcprewrite if you want to replace ip adr
 Change DLT and add ethernet header to each packet.
 
 
-## Setup 
+## Setup
 
 | Software   | Version          |
 |:-----------|:-----------------|
