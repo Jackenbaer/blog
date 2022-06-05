@@ -2,7 +2,7 @@
 layout: post
 title: "Replace IP in BSD Loopback PCAP"
 date:   2022-06-05 16:16:23 +0200
-categories: it
+categories: freebsd pcap
 ---
 
 
@@ -31,7 +31,7 @@ pkg install -y tcpreplay
 
 
 
-## preparation
+## Adding Ethernet EN10MB headers
 
 ![image](/blog/assets/images/replace_ip_bsd_loopback_original.png)
 
@@ -50,7 +50,7 @@ tcprewrite --dlt=enet --infile=tmp.pcap --outfile=enet.pcap
 
 
 
-## replacing ip 
+## Replacing ip addresses 
 Create the cachefile: 
 ```
 tcpprep --port --pcap=enet.pcap --cachefile=in.cache
