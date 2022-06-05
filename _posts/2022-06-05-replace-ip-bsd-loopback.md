@@ -6,23 +6,24 @@ categories: freebsd pcap
 ---
 
 
-# Problem description
-BSD loopback header is not supported by tcprewrite if you want to replace ip adresses. Executing tcprewrite overwrites parts of the ip header.
+## Problem description
+BSD loopback header is not supported by tcprewrite if you want to replace ip adresses. The result after executing tcpwrite is a malformed pcap or there will be no changes at all.
 
-# Solution summary
+## Solution summary
 Change DLT and add ethernet header to each packet.
 
 
-# Setup 
-| Software | Version |
-|:--|:--|
-| FreeBSD | 13.0-RELEASE-p11 |
-| tcprewrite | 4.4.1 |
-| tcpprep | 4.4.1 |
-| tcpdump | 4.9.3 | 
+## Setup 
+
+| Software   | Version          |
+|:-----------|:-----------------|
+| FreeBSD    | 13.0-RELEASE-p11 |
+| tcprewrite | 4.4.1            |
+| tcpprep    | 4.4.1            |
+| tcpdump    | 4.9.3            | 
 
 
-# Installation
+## Installation
 ```
 pkg install -y tcpreplay 
 ```
@@ -30,11 +31,11 @@ pkg install -y tcpreplay
 [Offical website of tcpwrite](https://tcpreplay.appneta.com/wiki/tcprewrite)
 
 
-
 ## Adding Ethernet EN10MB headers
 
 ![image](/blog/assets/images/replace_ip_bsd_loopback_original.jpg)
-
+As you can see the BSD loopback header only contains 4 bytes.
+Executing tcprewrite will overwrite parts of the ip header because tcpwrite would expect an ethernet header. 
 
 Insert bytes:
 ```
@@ -47,7 +48,7 @@ tcprewrite --dlt=enet --infile=tmp.pcap --outfile=enet.pcap
 ```
 
 ![image](/blog/assets/images/replace_ip_bsd_loopback_enet.jpg)
-
+We successfully added an ethernet header. 
 
 
 ## Replacing ip addresses 
@@ -63,7 +64,7 @@ tcprewrite --cachefile=in.cache --endpoints=1.1.1.1:2.2.2.2 --infile=enet.pcap -
 
 Maybe you have to recalc ethernet checksums.
 
-# Check the result
+## Check the result
 ```
 tcpdump -r replaced.pacp
 ```
