@@ -20,6 +20,7 @@ If an important scenario is missing text me and i will try to integrate it. Whil
 - [Summary](#summary)
 - [Result](#result)
 
+---
 <a name="scenario1"></a>
 ## Scenario 1: Bruteforce Access
 # Description 
@@ -31,6 +32,7 @@ Depends on the way the password is generated. Long and random password achieve t
 # Public Key Authentication
 Since keys are generated with ```ssh-keygen``` each key is long and random enough by default. 
 
+---
 <a name="scenario2"></a>
 ## Scenario 2: Man in the middle
 # Description 
@@ -43,7 +45,7 @@ The MITM is able to forward the password to the target. Afterwards the password 
 # Public Key Authentication
 Not possible because the authentication is done via a signature other a challenge. The MITM is not able to replay or intercept the authentication process.(More details for public authentication coming soon)
 
-
+---
 <a name="scenario3"></a>
 ## Scenario 3: Infect other servers from infected Server
 # Description 
@@ -55,7 +57,7 @@ Depends on user behavior. The attacker is able to log your password while you au
 # Public Key Authentication
 Users are able to use the same key for multiple machines without  risking that an attacker have access to more servers. 
 
-
+---
 <a name="scenario4"></a>
 ## Scenario 4: Reinfect server after it is resetted to a recovery point before infection
 # Description 
@@ -68,7 +70,7 @@ If you change all passwords after the reset the attacker is not able to login an
 # Public Key Authentication
 You don't have to change your keys. 
 
-
+---
 <a name="scenario5"></a>
 ## Scenario 5: Member leaves the team
 # Description 
@@ -80,7 +82,7 @@ You have to change each shared user account on each machine and share the new pa
 # Public Key Authentication
 You simply remove the public key in ```authorized_keys``` and access should be prohibited. Other team members don't have to do anything. Maybe the team member installed something like a backdoor. But if he was that criminal, you probably have more problems you are not able to protect against. 
  
-
+---
 <a name="scenario6"></a>
 ## Scenario 6: Member joins the team 
 # Description 
@@ -95,10 +97,12 @@ Type a secure passwords (probably multiple times because since it is secure it w
 # Public Key Authentication
 The new team member shares his public key. Even if an attacker knows the public key, he wont gain access to the server. The private keys stays on the laptop of the new team member. 
 
+---
 <a name="summary"></a>
 ## Summary
+
 | Scenario | Password Authentication | Public Key Authentication | 
-|:--|:--| 
+|:--|:--| :--| 
 | [Bruteforce](#scenario1) | Can be secure but not by default | Secure by default |
 | [MITM](#scenario2) | Insecure in some scenarios but not likely | Secure by default |
 | [Infect other servers](#scenario3) | Can be secure but not by default | Secure by default |
@@ -106,6 +110,7 @@ The new team member shares his public key. Even if an attacker knows the public 
 | [Member leaves the team](#scenario5) | Can be secure but not by default | Secure by default |
 | [Member joins the team](#scenario6) | Can be secure but not by default | Secure by default |
 
+---
 <a name="result"></a>
 ## Result 
 Password authentication can be as secure as public key authentication. But you and other users have to do a lot manually. Public key authentication achieves this high level of security by default without human interaction. Make your life easy, use public key authentication. 
