@@ -6,7 +6,7 @@ categories: freebsd wireguard
 ---
 
 
-## Overview
+## Table of Contents
 - [Description](#description)
 - [Install wireguard](#install_wireguard)
 - [Generate Keys](#generate_keys)
