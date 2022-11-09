@@ -7,8 +7,9 @@ categories: ssh
 
 ## Overview
 What is better? Public key authentication or password authentication. To answer this question we will compare each authentication method in different scenarios. 
-If an important scenario is missing text me and i will try to integrate it. While reading the following scenarios keep in mind what you expierenced during your work. 
+If an important scenario is missing text me and i will try to integrate it. While reading the following scenarios keep in mind what you expierenced during your work.
 
+---
 ## Table of Contents
 
 - [Scenario 1: Bruteforce](#scenario1)
