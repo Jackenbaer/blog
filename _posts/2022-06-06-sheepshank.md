@@ -6,7 +6,7 @@ categories: knots
 ---
 
 
-![image](/blog/assets/images/sheepshank_1.jpg)
-![image](/blog/assets/images/sheepshank_2.jpg)
-![image](/blog/assets/images/sheepshank_3.jpg)
-![image](/blog/assets/images/sheepshank_4.jpg)
+![image](/assets/images/sheepshank_1.jpg)
+![image](/assets/images/sheepshank_2.jpg)
+![image](/assets/images/sheepshank_3.jpg)
+![image](/assets/images/sheepshank_4.jpg)

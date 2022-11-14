@@ -6,9 +6,9 @@ categories: knots
 ---
 
 
-![image](/blog/assets/images/zeppelin_bend_1.jpg)
-![image](/blog/assets/images/zeppelin_bend_2.jpg)
-![image](/blog/assets/images/zeppelin_bend_3.jpg)
-![image](/blog/assets/images/zeppelin_bend_4.jpg)
-![image](/blog/assets/images/zeppelin_bend_5.jpg)
+![image](/assets/images/zeppelin_bend_1.jpg)
+![image](/assets/images/zeppelin_bend_2.jpg)
+![image](/assets/images/zeppelin_bend_3.jpg)
+![image](/assets/images/zeppelin_bend_4.jpg)
+![image](/assets/images/zeppelin_bend_5.jpg)
 

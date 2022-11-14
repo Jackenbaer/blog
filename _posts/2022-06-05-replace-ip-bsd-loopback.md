@@ -33,7 +33,7 @@ pkg install -y tcpreplay
 
 ## Adding Ethernet EN10MB headers
 
-![image](/blog/assets/images/replace_ip_bsd_loopback_original.jpg)
+![image](/assets/images/replace_ip_bsd_loopback_original.jpg)
 As you can see the BSD loopback header only contains 4 bytes.
 Executing tcprewrite will overwrite parts of the ip header because tcpwrite would expect an ethernet header. 
 
@@ -47,7 +47,7 @@ Change dtl:
 tcprewrite --dlt=enet --infile=tmp.pcap --outfile=enet.pcap
 ```
 
-![image](/blog/assets/images/replace_ip_bsd_loopback_enet.jpg)
+![image](/assets/images/replace_ip_bsd_loopback_enet.jpg)
 We successfully added an ethernet header. 
 
 
