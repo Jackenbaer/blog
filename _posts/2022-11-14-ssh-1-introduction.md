@@ -11,7 +11,7 @@ It's going to be a mix of explained RFC standards, parts of the [source code](ht
 
 
 ---
-## Table of Contents
+# Table of Contents
 - [Password vs. Public Key Authentication](/_posts/2022-11-08-ssh-2-password-vs-pubkey-auth.md)
 
 ---
