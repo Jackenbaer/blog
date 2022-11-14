@@ -20,7 +20,7 @@
 
 title: Jackenbaer 
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://jackenbaer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jackenbaer.de"# the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jackenbaer 
 github_username:  jackenbaer 
 
