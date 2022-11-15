@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Cheatsheet tmux"
-date:   2022-11-15 16:16:23 +0200
+title:  "Cheatsheet Tmux"
+date:   2022-11-15 21:16:23 +0200
 categories: cheatsheets
 ---
 
