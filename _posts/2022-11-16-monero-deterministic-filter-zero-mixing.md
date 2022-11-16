@@ -15,13 +15,13 @@ categories: monero
 
 | ![](/assets/images/monero_filter0_2.jpg) |
 |:--|
-| Outputs can only be spend a single time. Removing the other edge. |
+| We spotted a ring signature over a single output. This has to be the real output. |
 
 | ![](/assets/images/monero_filter0_3.jpg) |
 |:--|
-|  |
+| Outputs can only be spend a single time. Remove the other edge. |
 
 
 | ![](/assets/images/monero_filter0_4.jpg) |
 |:--|
-| Repeat everything as often as possible |
+| After removing the edge we created another zero mixing transaction. Repeat everything as until there are no zero mixing transactions left. |
