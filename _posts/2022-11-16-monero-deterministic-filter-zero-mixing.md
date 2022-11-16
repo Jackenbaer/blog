@@ -7,10 +7,21 @@ categories: monero
 
 # Zero Mixing
 
-![Typical situation without any filters applied yet](/assets/images/monero_filter0_1.jpg)
 
-![Outputs can only be spend a single time. Removing the other edge](/assets/images/monero_filter0_2.jpg)
+| ![](/assets/images/monero_filter0_1.jpg) |
+|:--|
+| Typical situation without any filters applied yet |
 
-![After removing a few edges we have to repeat the previous steps until no edges will be marked as valid](/assets/images/monero_filter0_3.jpg)
 
-![Repeat everything](/assets/images/monero_filter0_4.jpg)
+| ![](/assets/images/monero_filter0_2.jpg) |
+|:--|
+| Outputs can only be spend a single time. Removing the other edge. |
+
+| ![](/assets/images/monero_filter0_3.jpg) |
+|:--|
+|  |
+
+
+| ![](/assets/images/monero_filter0_4.jpg) |
+|:--|
+| Repeat everything as often as possible |
