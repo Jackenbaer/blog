@@ -12,7 +12,7 @@ It's going to be a mix of explained RFC standards, parts of the [source code](ht
 
 ---
 # Table of Contents
-- [Password vs. Public Key Authentication](https://paludosa.de/ssh/2022/11/08/ssh-2-password-vs-pubkey-auth.html)
+- [Password vs. Public Key Authentication](https://jackenbaer.de/ssh/2022/11/08/ssh-2-password-vs-pubkey-auth.html)
 
 ---
 # Overview RFC standards
