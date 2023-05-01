@@ -9,10 +9,10 @@ categories: ssh yubikey
 
 ---
 # Table of Contents
-- [General Yubikey Information] (#background)
-- [Yubikeys and SSH Authentication] (#authentication)
-- [Yubikey PIV Authentication vs. Standard Public Key Authentication] (#critic)
-- [Summary] (#summary)
+- [General Yubikey Information](#background)
+- [Yubikeys and SSH Authentication](#authentication)
+- [Yubikey PIV Authentication vs. Standard Public Key Authentication](#critic)
+- [Summary](#summary)
 
 
 ---
