@@ -35,10 +35,10 @@ To compare SSH authentication using YubiKeys as a PIV Smartcard with standard pu
 
 The most notable example occurs when your own system is compromised, or when you need to log in to a server from an untrusted device. Let's examine how this impacts some security aspects.
 
-## Standard Public Key Authentication
+** Standard Public Key Authentication **
 A compromised system could result in a cleartext copy of the private key, even if it is password-protected (as the attacker could deploy a keylogger). The attacker would then be able to log in to all current and future remote systems, independently of the infected system. He is also able to login again after he logged out without installing a backdoor. 
 
-## Yubikey PIV Smartcard Authentication
+** Yubikey PIV Smartcard Authentication ** 
 
 The YubiKey protects the private key but offers an interface through the ssh-agent that can be exploited by attackers to sign SSH authentication challenges. I have uploaded a brief Python demo to [my Git repository](https://github.com/jackenbaer/remote-ssh-challenge-demo) to illustrate this type of attack.
 
