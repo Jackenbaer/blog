@@ -6,10 +6,10 @@ categories: monero
 ---
 
 # Table of Contents
-- [Overview] (#overview)
-- [Data analysis pipeline] (#infrastructure)
-- [Impact of Zero Mixing] (#impact_zero_mixing)
-- [General Structure of Monero Transactions] (#general_structure)
+- [Overview](#overview)
+- [Data analysis pipeline](#infrastructure)
+- [Impact of Zero Mixing](#impact_zero_mixing)
+- [General Structure of Monero Transactions](#general_structure)
 
 ---
 <a name="overview"></a>
@@ -21,7 +21,7 @@ The paper ["An Empirical Analysis of Traceability in the Monero Blockchain"](htt
 # Infrastructure
 I was interested in how this worked and so built my own analysis pipeline. Unfortunately, I cannot share my code but can describe the infrastructure and share some of my plots. 
  
-|![](/assets/images/architekture.jpg)|
+|![](/assets/images/architecture.jpg)|
 |:--|
 | 1. Enrich the data from the json RPC API and write a complete json Block as message to kafka. 
 | 2. Read the message, extract nodes and edges, and write them to a database of your choice. Many graph databases offer a fast CSV importer. Use them for initial import and prefer Kafka connectors for your database if possible.  |
@@ -50,29 +50,30 @@ Now I would like to share some results of this analysis with you.
 | Without any filter |
 | :-- | 
 | ![](/assets/images/Count_OutputToInput_by_Input_and_block_without_filter.png) |
-| |
+
 
 | After Zero Mixing filter |
 | :-- | 
 | ![](/assets/images/Count_OutputToInput_by_Input_and_block_filter0.png) |
-| |
+
 
 | After Zero Mixing filter |
 | :-- | 
 | ![](/assets/images/Count_InputToTransaction_by_Transaction_and_block_without_filter.png) |
-| |
+
 
 ---
 <a name="general_structure"></a>
 # General Structure of Monero Transactions
 Here are some plots on how the general structure of transactions changed. 
 
-| Before any filter |
-| :-- |
-|![](Count_InputToTransaction_by_Transaction_and_block_without_filter.png) |
-| |
+
 
 | Before any filter |
 | :-- |
-|![](Count_InputToTransaction_by_Transaction_and_block_without_filter.png) |
-| |
+|![](/assets/images/Pie_Count_OutputToInput_by_Input_without_filter.png) |
+
+
+| After first filter |
+| :-- |
+|![](/assets/images/Pie_Count_OutputToInput_by_Input_filter0.png) |
